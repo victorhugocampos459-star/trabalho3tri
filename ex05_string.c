@@ -13,7 +13,7 @@ int main() {
             texto[i] == 'i' || texto[i] == 'I' ||
             texto[i] == 'o' || texto[i] == 'O' ||
             texto[i] == 'u' || texto[i] == 'U') {
-            vogais = vogais + 1;
+            vogais++;
         }
     }
 
