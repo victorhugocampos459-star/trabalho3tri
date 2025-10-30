@@ -3,22 +3,20 @@
 int main() {
     int num;
 
-    printf("Digite um número inteiro: ");
+    printf("Digite um numero: ");
     scanf("%d", &num);
 
-    if (num > 0) {
-        printf("O número é positivo.\n");
-    } else if (num < 0) {
-        printf("O número é negativo.\n");
-    } else {
-        printf("O número é zero.\n");
-    }
+    if (num > 0)
+        printf("O numero e positivo\n");
+    else if (num < 0)
+        printf("O numero e negativo\n");
+    else
+        printf("O numero e zero\n");
 
-    if (num % 2 == 0) {
-        printf("O número é par.\n");
-    } else {
-        printf("O número é ímpar.\n");
-    }
+    if (num % 2 == 0)
+        printf("O numero e par\n");
+    else
+        printf("O numero e impar\n");
 
     return 0;
 }
