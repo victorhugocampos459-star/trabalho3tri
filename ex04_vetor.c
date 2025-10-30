@@ -2,7 +2,7 @@
 
 int main() {
     int vet[10];
-    int i, maior, menor, soma = 0;
+    int i, soma = 0, maior, menor;
     float media;
 
     printf("Digite 10 numeros inteiros:\n");
