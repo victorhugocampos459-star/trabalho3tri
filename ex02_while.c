@@ -4,7 +4,7 @@ int main() {
     int num, soma = 0, qtd = 0;
     float media;
 
-    printf("Digite numeros (digite -1 para parar): ");
+    printf("Digite numeros inteiros (-1 para encerrar): ");
     scanf("%d", &num);
 
     while (num != -1) {
@@ -13,11 +13,14 @@ int main() {
         scanf("%d", &num);
     }
 
-    media = (float)soma / qtd;
-
-    printf("Quantidade: %d\n", qtd);
-    printf("Soma: %d\n", soma);
-    printf("Media: %.2f\n", media);
+    if (qtd > 0) {
+        media = (float)soma / qtd;
+        printf("Quantidade: %d\n", qtd);
+        printf("Soma: %d\n", soma);
+        printf("Media: %.2f\n", media);
+    } else {
+        printf("Nenhum numero valido foi digitado.\n");
+    }
 
     return 0;
 }
